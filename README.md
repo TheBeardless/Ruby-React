@@ -6,45 +6,38 @@ Rate your favorite snack.
 
 ---
 
-:heavy_check_mark: Have at least 2 related models. <br>
-:heavy_check_mark: Include sign up/log in functionality with encrypted passwords & an authorization flow. <br>
+:heavy_check_mark: Have at least one database model <br>
+:heavy_check_mark: Include wireframes <br>
 :heavy_check_mark: Have semantically clean HTML and CSS <br>
+:heavy_check_mark: Be deployed online
+:heavy_check_mark: A working full-stack or expanded API application, built by you, that has full CRUD functionality
 
 ### The Stack
 
 ---
 
-- [`MongoDB`]
-- [`Express`]
-- [`Node.js`]
+- [`Ruby on Rails`]
+- [`React`]
+- [`Postgres`]
 
-### Dependencies
-
----
-
-- [`bcrypt`]
-- [`cors`]
-- [`express`]
-- [`express-session`]
-- [`mongodb`]
-- [`mongoose`]
-- [`node`]
-- [`nodemon`]
-- [`regenerator-runtime`]
-- [`sweetalert2`]
 
 ### Usage
 
 ---
 
-Running the server side
+Running the server side - Ruby on Rails:
 
 ```sh
-npm start
+rails install
+rails server
 ```
 
-Running the client:
+Running the client - React:
 
 ```sh
-parcel index.html
+yarn install
+yarn start
 ```
+Wireframes go here. 
+
+User stories go here. 
