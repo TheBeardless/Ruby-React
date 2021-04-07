@@ -43,7 +43,10 @@ Wireframes go here.
 User stories go here. 
 
 Learned along the way: 
-- webpacker can now handle react and you can create a frontend and backend in 1 directory to be hosted on one server (ie. Heroku). - didn't do this as it's a bit of a stretch goal. 
+- "Webpacker now supports react.js 🎉" and you can create a frontend and backend in 1 directory to be hosted on one server (ie. Heroku). - didn't do this as it's a bit of a stretch goal. 
+
+Some Best Practice
 - creating a private method to define what params can be permitted in an API to mitigate some unethical hacking. 
 - active record validation helpers. example:"rating": ["17 isn't within 1 and 10"]
-- 
+- exception handling
+- namespace and versioning ie /api/v1/snacks
