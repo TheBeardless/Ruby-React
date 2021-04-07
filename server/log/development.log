@@ -759,3 +759,552 @@ Processing by V1::SnacksController#create as */*
 Completed 201 Created in 12ms (Views: 0.4ms | ActiveRecord: 3.7ms | Allocations: 3958)
 
 
+Started POST "/v1/snacks/" for ::1 at 2021-04-07 21:48:25 +1000
+Processing by V1::SnacksController#create as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>7, "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>7}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/snacks_controller.rb:12:in `create'
+  [1m[36mSnack Create (0.3ms)[0m  [1m[32mINSERT INTO "snacks" ("name", "description", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Grape"], ["description", "Like a grapefruit.. but not"], ["rating", 7], ["created_at", "2021-04-07 11:48:25.482690"], ["updated_at", "2021-04-07 11:48:25.482690"]]
+  ↳ app/controllers/v1/snacks_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/snacks_controller.rb:12:in `create'
+Completed 201 Created in 12ms (Views: 0.5ms | ActiveRecord: 3.4ms | Allocations: 3933)
+
+
+Started POST "/v1/snacks/" for ::1 at 2021-04-07 22:05:43 +1000
+  
+ArgumentError (Unknown validator: 'PresenseValidator'):
+  
+app/models/snack.rb:4:in `<class:Snack>'
+app/models/snack.rb:2:in `<main>'
+Started POST "/v1/snacks/" for ::1 at 2021-04-07 22:06:05 +1000
+Processing by V1::SnacksController#create as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17, "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/snacks_controller.rb:12:in `create'
+  [1m[36mSnack Create (1.2ms)[0m  [1m[32mINSERT INTO "snacks" ("name", "description", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Grape"], ["description", "Like a grapefruit.. but not"], ["rating", 17], ["created_at", "2021-04-07 12:06:05.485513"], ["updated_at", "2021-04-07 12:06:05.485513"]]
+  ↳ app/controllers/v1/snacks_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/snacks_controller.rb:12:in `create'
+Completed 201 Created in 13ms (Views: 0.4ms | ActiveRecord: 7.9ms | Allocations: 4075)
+
+
+Started POST "/v1/snacks/" for ::1 at 2021-04-07 22:06:22 +1000
+Processing by V1::SnacksController#create as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17, "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/snacks_controller.rb:12:in `create'
+  [1m[36mSnack Create (0.3ms)[0m  [1m[32mINSERT INTO "snacks" ("name", "description", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Grape"], ["description", "Like a grapefruit.. but not"], ["rating", 17], ["created_at", "2021-04-07 12:06:22.680459"], ["updated_at", "2021-04-07 12:06:22.680459"]]
+  ↳ app/controllers/v1/snacks_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/snacks_controller.rb:12:in `create'
+Completed 201 Created in 12ms (Views: 0.3ms | ActiveRecord: 12.8ms | Allocations: 4060)
+
+
+Started POST "/v1/snacks/" for ::1 at 2021-04-07 22:13:21 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/models/snack.rb:5: syntax error, unexpected =>
+...sence: true, inclusion: {in: => 1..10, message: "%{value} is...
+...                             ^~
+C:/dev/ga/projects/Ruby-React/server/app/models/snack.rb:5: syntax error, unexpected ',', expecting `end'
+...true, inclusion: {in: => 1..10, message: "%{value} isn't wit...
+...                              ^
+C:/dev/ga/projects/Ruby-React/server/app/models/snack.rb:5: syntax error, unexpected '}', expecting `end'
+...{value} isn't within 1 and 10"}
+...                              ^
+):
+  
+app/models/snack.rb:5: syntax error, unexpected =>
+app/models/snack.rb:5: syntax error, unexpected ',', expecting `end'
+app/models/snack.rb:5: syntax error, unexpected '}', expecting `end'
+app/models/snack.rb:5: syntax error, unexpected =>
+app/models/snack.rb:5: syntax error, unexpected ',', expecting `end'
+app/models/snack.rb:5: syntax error, unexpected '}', expecting `end'
+Started POST "/v1/snacks/" for ::1 at 2021-04-07 22:14:24 +1000
+Processing by V1::SnacksController#create as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17, "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17}}
+Completed 422 Unprocessable Entity in 68ms (Views: 65.0ms | ActiveRecord: 6.3ms | Allocations: 5433)
+
+
+Started GET "/v1/snacks/" for ::1 at 2021-04-07 22:22:25 +1000
+Processing by V1::SnacksController#index as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17, "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17}}
+  [1m[36mSnack Load (1.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/v1/snacks_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 6.7ms | Allocations: 3671)
+
+
+Started DELETE "/v1/snacks/8" for ::1 at 2021-04-07 22:23:33 +1000
+Processing by V1::SnacksController#destroy as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17, "id"=>"8", "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/v1/snacks_controller.rb:20:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/v1/snacks_controller.rb:20:in `destroy'
+  [1m[36mSnack Destroy (0.6ms)[0m  [1m[31mDELETE FROM "snacks" WHERE "snacks"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/v1/snacks_controller.rb:20:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/v1/snacks_controller.rb:20:in `destroy'
+Completed 204 No Content in 31ms (ActiveRecord: 1.8ms | Allocations: 3171)
+
+
+Started GET "/v1/snacks/8" for ::1 at 2021-04-07 22:24:07 +1000
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for V1::SnacksController
+Did you mean?  destroy
+               create
+               index):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/v1/snacks/7" for ::1 at 2021-04-07 22:24:11 +1000
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for V1::SnacksController
+Did you mean?  destroy
+               create
+               index):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started DELETE "/v1/snacks/8" for ::1 at 2021-04-07 22:31:29 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/v1/snacks_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/v1/snacks_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/v1/snacks_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+Started DELETE "/v1/snacks/8" for ::1 at 2021-04-07 22:33:43 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/v1/snacks_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/v1/snacks_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/v1/snacks_controller.rb:40: syntax error, unexpected end-of-input, expecting `end'
+Started DELETE "/v1/snacks/8" for ::1 at 2021-04-07 22:33:57 +1000
+Processing by V1::SnacksController#destroy as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17, "id"=>"8", "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17}}
+  [1m[36mSnack Load (1.0ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/v1/snacks_controller.rb:22:in `destroy'
+Completed 404 Not Found in 4ms (ActiveRecord: 6.9ms | Allocations: 741)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Snack with 'id'=8):
+  
+app/controllers/v1/snacks_controller.rb:22:in `destroy'
+Started DELETE "/v1/snacks/8" for ::1 at 2021-04-07 22:39:05 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/config/routes.rb:10: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:10: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:10: syntax error, unexpected `end', expecting end-of-input
+Started DELETE "/v1/snacks/8" for ::1 at 2021-04-07 22:39:22 +1000
+  
+ActionController::RoutingError (No route matches [DELETE] "/v1/snacks/8"):
+  
+Started DELETE "/api/v1/snacks/8" for ::1 at 2021-04-07 22:39:32 +1000
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started DELETE "/api/v1/snacks/7" for ::1 at 2021-04-07 22:39:43 +1000
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/api/v1/snacks/" for ::1 at 2021-04-07 22:39:51 +1000
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/api/v1/snacks/" for ::1 at 2021-04-07 22:40:22 +1000
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/api/v1/snacks/" for ::1 at 2021-04-07 22:44:49 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17, "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 11.1ms | Allocations: 3541)
+
+
+Started DELETE "/api/v1/snacks/5" for ::1 at 2021-04-07 22:44:58 +1000
+Processing by Api::V1::SnacksController#destroy as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17, "id"=>"5", "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:21:in `destroy'
+  [1m[36mSnack Destroy (0.3ms)[0m  [1m[31mDELETE FROM "snacks" WHERE "snacks"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:21:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.5ms | Allocations: 1838)
+
+
+Started GET "/api/v1/snacks/" for ::1 at 2021-04-07 22:45:04 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17, "snack"=>{"name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>17}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1259)
+
+
+Started PATCH "/api/v1/snacks/7" for ::1 at 2021-04-07 22:53:04 +1000
+Processing by Api::V1::SnacksController#update as */*
+  Parameters: {"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7, "id"=>"7", "snack"=>{"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7}}
+  [1m[36mSnack Load (1.1ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:26:in `update'
+  [1m[36mSnack Update (0.4ms)[0m  [1m[33mUPDATE "snacks" SET "name" = $1, "description" = $2, "rating" = $3, "updated_at" = $4 WHERE "snacks"."id" = $5[0m  [["name", "Mars Bar"], ["description", "Not as good as Snickers"], ["rating", 7], ["updated_at", "2021-04-07 12:53:04.990938"], ["id", 7]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:26:in `update'
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:28:in `update'
+Completed 500 Internal Server Error in 18ms (Views: 0.2ms | ActiveRecord: 9.4ms | Allocations: 5165)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/api/v1/snacks_controller.rb:28:in `update'
+Started PATCH "/api/v1/snacks/7" for ::1 at 2021-04-07 22:53:26 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected constant, expecting `end'
+...ssage: "Snack Updated!" } Snack.find(params[:id])
+...                          ^~~~~
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected constant, expecting `end'
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected constant, expecting `end'
+Started PATCH "/api/v1/snacks/7" for ::1 at 2021-04-07 22:55:09 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+...ed!"}, Snack.find(params[:id]), status: :Updated!
+...                              ^
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+Started PATCH "/api/v1/snacks/7" for ::1 at 2021-04-07 22:56:04 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+...ted!", Snack.find(params[:id]), status: :Updated!}
+...                              ^
+C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+app/controllers/api/v1/snacks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+app/controllers/api/v1/snacks_controller.rb:50: syntax error, unexpected end-of-input, expecting `end'
+Started PATCH "/api/v1/snacks/7" for ::1 at 2021-04-07 22:56:31 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected tLABEL
+    render json: message: "Snack Updated!", Snack.find...
+                 ^~~~~~~~
+C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting `end'
+...son: message: "Snack Updated!", Snack.find(params[:id]), sta...
+...                              ^
+C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting `end'
+...ted!", Snack.find(params[:id]), status: :Updated!
+...                              ^
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected tLABEL
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting `end'
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting `end'
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected tLABEL
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting `end'
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting `end'
+Started PATCH "/api/v1/snacks/7" for ::1 at 2021-04-07 22:56:40 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected tLABEL
+    render json: message: "Snack Updated!", Snack.find...
+                 ^~~~~~~~
+C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting `end'
+...son: message: "Snack Updated!", Snack.find(params[:id]) #, s...
+...                              ^
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected tLABEL
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting `end'
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected tLABEL
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting `end'
+Started PATCH "/api/v1/snacks/7" for ::1 at 2021-04-07 22:57:13 +1000
+Processing by Api::V1::SnacksController#update as */*
+  Parameters: {"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7, "id"=>"7", "snack"=>{"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7}}
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:25:in `update'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 11.9ms | Allocations: 3125)
+
+
+  
+ArgumentError (Unrecognized status code :Updated!):
+  
+app/controllers/api/v1/snacks_controller.rb:27:in `update'
+Started PATCH "/api/v1/snacks/7" for ::1 at 2021-04-07 22:58:31 +1000
+Processing by Api::V1::SnacksController#update as */*
+  Parameters: {"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7, "id"=>"7", "snack"=>{"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7}}
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:25:in `update'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 3080)
+
+
+Started PATCH "/api/v1/snacks/6" for ::1 at 2021-04-07 22:59:18 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+...ed!"}, Snack.find(params[:id]), status: :ok
+...                              ^
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+Started PATCH "/api/v1/snacks/6" for ::1 at 2021-04-07 23:04:20 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected '}', expecting =>
+...ssage: "Snack Updated!", snack}, status: :ok
+...                              ^
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected '}', expecting =>
+Started PATCH "/api/v1/snacks/6" for ::1 at 2021-04-07 23:04:33 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected local variable or method, expecting '}'
+...message: "Snack Updated!" snack}, status: :ok
+...                          ^~~~~
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected local variable or method, expecting '}'
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected local variable or method, expecting '}'
+Started PATCH "/api/v1/snacks/6" for ::1 at 2021-04-07 23:04:51 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+...sage: "Snack Updated!"}, snack, status: :ok
+...                              ^
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+Started PATCH "/api/v1/snacks/6" for ::1 at 2021-04-07 23:04:57 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+...Snack Updated!"}, snack status: :ok
+...                        ^~~~~~~
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected tLABEL, expecting `do' or '{' or '('
+Started PATCH "/api/v1/snacks/6" for ::1 at 2021-04-07 23:05:10 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected '}', expecting =>
+...age: "Snack Updated!"}, {snack}, status: :ok
+...                              ^
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected '}', expecting =>
+Started PATCH "/api/v1/snacks/6" for ::1 at 2021-04-07 23:05:31 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected '}', expecting =>
+...nack Updated!"}, {snack_params}, status: :ok
+...                              ^
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected '}', expecting =>
+Started PATCH "/api/v1/snacks/6" for ::1 at 2021-04-07 23:05:53 +1000
+  
+SyntaxError (C:/dev/ga/projects/Ruby-React/server/app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+...ed!"}, {message: snack_params}, status: :ok
+...                              ^
+):
+  
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+app/controllers/api/v1/snacks_controller.rb:27: syntax error, unexpected ',', expecting =>
+Started PATCH "/api/v1/snacks/6" for ::1 at 2021-04-07 23:11:17 +1000
+Processing by Api::V1::SnacksController#update as */*
+  Parameters: {"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7, "id"=>"6", "snack"=>{"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:26:in `update'
+  [1m[36mSnack Update (0.4ms)[0m  [1m[33mUPDATE "snacks" SET "name" = $1, "description" = $2, "updated_at" = $3 WHERE "snacks"."id" = $4[0m  [["name", "Mars Bar"], ["description", "Not as good as Snickers"], ["updated_at", "2021-04-07 13:11:18.099762"], ["id", 6]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:26:in `update'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 4.1ms | Allocations: 4579)
+
+
+Started GET "/api/v1/snacks/" for ::1 at 2021-04-07 23:11:24 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7, "snack"=>{"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1259)
+
+
+Started GET "/api/v1/snacks/7" for ::1 at 2021-04-07 23:11:43 +1000
+Processing by Api::V1::SnacksController#show as */*
+  Parameters: {"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7, "id"=>"7", "snack"=>{"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7}}
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:21:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 595)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-07 23:28:50 +1000
+Processing by Api::V1::SnacksController#index as HTML
+  [1m[36mSnack Load (1.0ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 40ms (Views: 40.1ms | ActiveRecord: 6.7ms | Allocations: 3378)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-07 23:32:25 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-07 23:32:31 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/" for ::1 at 2021-04-07 23:32:35 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.5ms | Allocations: 182)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 722)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-07 23:32:38 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-07 23:34:46 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-07 23:37:58 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/api/v1/snacks/" for ::1 at 2021-04-07 23:38:31 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7, "snack"=>{"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/api/v1/snacks/" for ::1 at 2021-04-07 23:39:06 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7, "snack"=>{"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-07 23:39:15 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
