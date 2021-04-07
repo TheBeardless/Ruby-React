@@ -17,6 +17,16 @@ rescue_from ActiveRecord::RecordNotDestroyed, with: :not_destroyed
     end
   end
 
+  def show
+    render json: Snack.find(params[:id])
+  end
+
+  def update
+    snack = Snack.find(params[:id])
+    snack.update(snack_params)
+    render json: {message: "Snack Updated!"}, status: :ok
+  end
+
   def destroy
     Snack.find(params[:id]).destroy! # destroy bang gives more callback options. 
     
