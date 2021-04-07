@@ -45,3 +45,4 @@ User stories go here.
 Learned along the way: 
 - webpacker can now handle react and you can create a frontend and backend in 1 directory to be hosted on one server (ie. Heroku). - didn't do this as it's a bit of a stretch goal. 
 - creating a private method to define what params can be permitted in an API to mitigate some unethical hacking. 
+- active record validation helpers. 
