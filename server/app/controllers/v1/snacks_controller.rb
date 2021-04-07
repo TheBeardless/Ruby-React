@@ -9,7 +9,7 @@ class V1::SnacksController < ApplicationController
     # check model is valid before testing.
     # snack = Snack.new(name: params[:name], description: params[:description], rating: params[:rating])
     snack = Snack.new(snack_params)
-    if snack.save
+    if snack.save #if true
       render json: snack, status: :created # status 201
     else
       render json: snack.errors, status: :unprocessable_entity # status 422
