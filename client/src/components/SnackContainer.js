@@ -41,7 +41,7 @@ const SnackContainer = () => {
     setSnackList(newSnacks);
 
     // Update snack list by calling the setSnacksList function
-    fetch(`http://localhost:9000/snacks/${snack._id}`, {
+    fetch(`http://localhost:3000/api/v1/snacks/${snack._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -62,7 +62,7 @@ const SnackContainer = () => {
     setSnackList(newSnacks);
 
     // Update snack list by calling the setSnacksList function
-    fetch(`http://localhost:9000/snacks/${snack._id}`, {
+    fetch(`http://localhost:3000/api/v1/snacks/${snack._id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -81,7 +81,7 @@ const SnackContainer = () => {
     // Update snack list by calling the setSnacksList function
     setSnackList(newSnacks);
 
-    fetch("http://localhost:9000/snacks", {
+    fetch("http://localhost:3000/api/v1/snacks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -91,7 +91,7 @@ const SnackContainer = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:9000/snacks", {
+    fetch("http://localhost:3000/api/v1/snacks", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
