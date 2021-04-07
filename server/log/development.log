@@ -57,3 +57,80 @@ Migrating to CreateSnacks (20210407091336)
   [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3046397844150113145)[0m
   [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-04-07 19:37:38 +1000
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 27.1ms | Allocations: 299)
+Completed 200 OK in 110ms (Views: 43.0ms | ActiveRecord: 0.0ms | Allocations: 2794)
+
+
+Started GET "/blah" for ::1 at 2021-04-07 19:38:13 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/blah"):
+  
+Started GET "/blah" for ::1 at 2021-04-07 19:38:30 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/blah"):
+  
+Started GET "/snacks" for ::1 at 2021-04-07 19:38:42 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/snacks"):
+  
+Started GET "/v1/snacks" for ::1 at 2021-04-07 19:38:58 +1000
+  
+ActionController::RoutingError (uninitialized constant V1::SnacksController):
+  
+Started GET "/v1/snacks/" for ::1 at 2021-04-07 19:39:02 +1000
+  
+ActionController::RoutingError (uninitialized constant V1::SnacksController):
+  
+Started GET "/v1/snacks" for ::1 at 2021-04-07 19:39:18 +1000
+  
+ActionController::RoutingError (uninitialized constant V1::SnacksController):
+  
+Started GET "/v1/snacks" for ::1 at 2021-04-07 19:39:43 +1000
+  
+ActionController::RoutingError (uninitialized constant V1::SnacksController):
+  
+Started GET "/v1/snacks/" for ::1 at 2021-04-07 19:44:34 +1000
+  
+ActionController::RoutingError (uninitialized constant V1::SnacksController):
+  
+Started GET "/snacks" for ::1 at 2021-04-07 19:44:48 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/snacks"):
+  
+Started GET "/v1/snacks/" for ::1 at 2021-04-07 19:46:04 +1000
+Processing by V1::SnacksController#index as */*
+  Parameters: {"name"=>"Jake", "password"=>"[FILTERED]", "snack"=>{"name"=>"Jake", "password"=>"[FILTERED]"}}
+Completed 204 No Content in 0ms (Allocations: 61)
+
+
+Started GET "/v1/snacks/" for ::1 at 2021-04-07 20:07:50 +1000
+Processing by V1::SnacksController#index as */*
+  Parameters: {"name"=>"Jake", "password"=>"[FILTERED]", "snack"=>{"name"=>"Jake", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms (Allocations: 1711)
+
+
+  
+NameError (uninitialized constant V1::SnacksController::Snack):
+  
+app/controllers/v1/snacks_controller.rb:5:in `index'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3046397844150113145)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSnacks (20210407102921)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.3ms)[0m  [1m[35mCREATE TABLE "snacks" ("id" bigserial primary key, "name" character varying, "description" text, "rating" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3046397844150113145)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3046397844150113145)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSnacks (20210407102921)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "snacks" ("id" bigserial primary key, "name" character varying, "description" text, "rating" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210407102921"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3046397844150113145)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
