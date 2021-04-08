@@ -9,8 +9,10 @@ Rate your favorite snack.
 :heavy_check_mark: Have at least one database model <br>
 :heavy_check_mark: Include wireframes <br>
 :heavy_check_mark: Have semantically clean HTML and CSS <br>
-:heavy_check_mark: Be deployed online  
-:heavy_check_mark: A working full-stack or expanded API application, built by you, that has full CRUD functionality
+Be deployed online  <br>
+A working full-stack or **expanded API application** <br>
+:heavy_check_mark: built by you <br>
+:heavy_check_mark: that has full CRUD functionality <br>
 
 ### The Stack
 
@@ -29,7 +31,7 @@ Running the server side - Ruby on Rails:
 
 ```sh
 rails install
-rails server
+rails server -p 4000
 ```
 
 Running the client - React:
@@ -38,9 +40,6 @@ Running the client - React:
 yarn install
 yarn start
 ```
-Wireframes go here. 
-
-User stories go here. 
 
 ### Learned along the way: 
 
@@ -54,4 +53,3 @@ Some Best Practice
   
 What I couldn't do: 
 - "Webpacker now supports react.js 🎉" and you can create a frontend and backend in 1 directory to be hosted on one server (ie. Heroku). - didn't do this as it's a bit of a stretch goal. 
-- render json: {message: something}, new record, status: :ok

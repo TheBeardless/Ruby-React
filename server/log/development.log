@@ -1308,3 +1308,226 @@ Processing by Api::V1::SnacksController#index as */*
 Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1257)
 
 
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 15:54:58 +1000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (1.0ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 56ms (Views: 6.9ms | ActiveRecord: 4.9ms | Allocations: 6072)
+
+
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 16:23:50 +1000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (1.0ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 5.4ms | Allocations: 6072)
+
+
+Started GET "/" for ::1 at 2021-04-08 16:23:54 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 30.6ms | Allocations: 299)
+Completed 200 OK in 112ms (Views: 58.4ms | ActiveRecord: 0.0ms | Allocations: 2326)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-04-08 16:23:55 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/snacks" for ::1 at 2021-04-08 16:24:18 +1000
+Processing by Api::V1::SnacksController#index as HTML
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 1316)
+
+
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 17:15:43 +1000
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (1.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 41ms (Views: 7.0ms | ActiveRecord: 6.5ms | Allocations: 6072)
+
+
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 17:26:46 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (2.1ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 49ms (Views: 48.9ms | ActiveRecord: 7.3ms | Allocations: 3386)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-08 17:28:06 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1280)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-08 17:28:06 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 1280)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-08 17:28:11 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 1280)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-08 17:28:16 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-04-08 17:32:22 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/api/v1/snacks" for ::1 at 2021-04-08 17:32:54 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 1256)
+
+
+Started GET "/api/v1/snacks" for ::1 at 2021-04-08 17:35:09 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 1257)
+
+
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 17:35:28 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 17:40:23 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 17:41:35 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1257)
+
+
+Started DELETE "/api/v1/snacks/undefined" for ::1 at 2021-04-08 17:42:02 +1000
+Processing by Api::V1::SnacksController#destroy as */*
+  Parameters: {"id"=>"undefined", "name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>7, "created_at"=>"2021-04-07T11:40:31.028Z", "updated_at"=>"2021-04-07T11:40:31.028Z", "snack"=>{"id"=>"undefined", "name"=>"Grape", "description"=>"Like a grapefruit.. but not", "rating"=>7, "created_at"=>"2021-04-07T11:40:31.028Z", "updated_at"=>"2021-04-07T11:40:31.028Z"}}
+  [1m[36mSnack Load (0.1ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:31:in `destroy'
+Completed 404 Not Found in 36ms (ActiveRecord: 0.3ms | Allocations: 1933)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Snack with 'id'=undefined):
+  
+app/controllers/api/v1/snacks_controller.rb:31:in `destroy'
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 17:43:05 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 1256)
+
+
+Started POST "/api/v1/snacks" for ::1 at 2021-04-08 17:43:17 +1000
+Processing by Api::V1::SnacksController#create as */*
+  Parameters: {"name"=>"Test", "rating"=>"1", "description"=>"test desc", "snack"=>{"name"=>"Test", "description"=>"test desc", "rating"=>"1"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:13:in `create'
+  [1m[36mSnack Create (3.8ms)[0m  [1m[32mINSERT INTO "snacks" ("name", "description", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Test"], ["description", "test desc"], ["rating", 1], ["created_at", "2021-04-08 07:43:17.306642"], ["updated_at", "2021-04-08 07:43:17.306642"]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:13:in `create'
+Completed 201 Created in 13ms (Views: 0.4ms | ActiveRecord: 4.9ms | Allocations: 2101)
+
+
+Started PUT "/api/v1/snacks/undefined" for ::1 at 2021-04-08 17:43:24 +1000
+Processing by Api::V1::SnacksController#update as */*
+  Parameters: {"name"=>"Test", "rating"=>"10", "description"=>"test desc", "id"=>"undefined", "snack"=>{"name"=>"Test", "description"=>"test desc", "rating"=>"10"}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:25:in `update'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 499)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Snack with 'id'=undefined):
+  
+app/controllers/api/v1/snacks_controller.rb:25:in `update'
+Started GET "/api/v1/snacks/" for ::1 at 2021-04-08 18:13:51 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7, "snack"=>{"name"=>"Mars Bar", "description"=>"Not as good as Snickers", "rating"=>7}}
+  [1m[36mSnack Load (0.9ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 6.5ms | Allocations: 3450)
+
+
+Started POST "/api/v1/snacks/" for ::1 at 2021-04-08 18:14:23 +1000
+Processing by Api::V1::SnacksController#create as */*
+  Parameters: {"name"=>"Food", "description"=>"Still a snack", "rating"=>8, "snack"=>{"name"=>"Food", "description"=>"Still a snack", "rating"=>8}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:13:in `create'
+  [1m[36mSnack Create (0.5ms)[0m  [1m[32mINSERT INTO "snacks" ("name", "description", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Food"], ["description", "Still a snack"], ["rating", 8], ["created_at", "2021-04-08 08:14:23.935554"], ["updated_at", "2021-04-08 08:14:23.935554"]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:13:in `create'
+Completed 201 Created in 11ms (Views: 1.5ms | ActiveRecord: 1.9ms | Allocations: 1798)
+
+
+Started PATCH "/api/v1/snacks/10" for ::1 at 2021-04-08 18:14:51 +1000
+Processing by Api::V1::SnacksController#update as */*
+  Parameters: {"name"=>" Updated", "description"=>"Still a snack", "rating"=>8, "id"=>"10", "snack"=>{"name"=>" Updated", "description"=>"Still a snack", "rating"=>8}}
+  [1m[36mSnack Load (0.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks" WHERE "snacks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:26:in `update'
+  [1m[36mSnack Update (1.0ms)[0m  [1m[33mUPDATE "snacks" SET "name" = $1, "updated_at" = $2 WHERE "snacks"."id" = $3[0m  [["name", " Updated"], ["updated_at", "2021-04-08 08:14:51.272215"], ["id", 10]]
+  ↳ app/controllers/api/v1/snacks_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:26:in `update'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 2271)
+
+
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 18:21:02 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (1.2ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 6.9ms | Allocations: 3559)
+
+
+Started GET "/api/v1/snacks" for 127.0.0.1 at 2021-04-08 18:21:05 +1000
+Processing by Api::V1::SnacksController#index as */*
+  Parameters: {"snack"=>{}}
+  [1m[36mSnack Load (0.3ms)[0m  [1m[34mSELECT "snacks".* FROM "snacks"[0m
+  ↳ app/controllers/api/v1/snacks_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 1473)
+
+

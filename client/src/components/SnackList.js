@@ -34,7 +34,6 @@ const SnackList = (props) => {
                     className="btn btn-warning"
                     onClick={() => {
                       props.handleSnackClick(index);
-                      // props.handleEditSnack(el);
                     }}
                   >
                     <FontAwesomeIcon icon="edit" />

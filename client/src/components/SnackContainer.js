@@ -7,8 +7,10 @@ import { SnackFormDelete } from "./SnackFormDelete";
 import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
 const SnackContainer = () => {
   const [snackList, setSnackList] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [snackEdit, setSnackEdit] = useState({
     rating: "",
     name: "",
@@ -81,7 +83,7 @@ const SnackContainer = () => {
     // Update snack list by calling the setSnacksList function
     setSnackList(newSnacks);
 
-    fetch("http://localhost:3000/api/v1/snacks", {
+    fetch(`http://localhost:3000/api/v1/snacks`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -91,7 +93,8 @@ const SnackContainer = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/v1/snacks", {
+    setLoading(true);
+    fetch(`/api/v1/snacks`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -100,11 +103,21 @@ const SnackContainer = () => {
       .then((response) => {
         return response.json();
       })
-      .then((response) => {
+      .then((data) => {
         // call to set state
-        setSnackList(response.data);
-      });
+        setSnackList(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setLoading(false)
+      })
   }, []);
+
+  if (loading) {
+    return <p>Data is loading...</p>
+  }
 
   return (
     <Router>
